@@ -1,0 +1,13 @@
+#!/bin/bash
+cp -r /var/lib/jenkins/* /root/jenkins_backup/
+cd /root/jenkins_backup
+rm -rf caches/
+token="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"
+username="prajwal1327"
+repoName="jenkin_backup"
+git status
+git remote set-url origin https://${token}@github.com/${username}/${repoName}.git
+git add --all
+a=`date +(%a:%d:%m:%y Time:%T)`
+git commit -m "$a"
+git push origin master

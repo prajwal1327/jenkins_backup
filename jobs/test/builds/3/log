@@ -1,0 +1,36 @@
+Started by user [8mha:////4JRX5r9Gz8DOhgZlJ7op+j9xn3PMlCOiahOiD9scqz6jAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL9gqLErPLEHACLPBEtwgAAAA==[0mprajwal more
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/test
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/prajwal1327/Myrepo.git
+ > git init /var/lib/jenkins/workspace/test # timeout=10
+Fetching upstream changes from https://github.com/prajwal1327/Myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/prajwal1327/Myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prajwal1327/Myrepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d11d9ffb0f6096876e48c613487ae80100381eca (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d11d9ffb0f6096876e48c613487ae80100381eca # timeout=10
+Commit message: "Update tomcatinstall.sh"
+First time build. Skipping changelog.
+[test] $ /bin/sh -xe /tmp/jenkins626990203434775994.sh
++ sh p2.sh
+the factorial of 4 is 24
+the factorial of 3 is 6
+the factorial of 5 is 120
+the factorial of 8 is 40320
+the factorial of 9 is 362880
+the factorial of 20 is 2432902008176640000
+the factorial of 30 is 265252859812191058636308480000000
+the factorial of 40 is 815915283247897734345611269596115894272000000000
+enter the number
+p2.sh: 23: [: -gt: unexpected operator
+the sum of number is 0
+Finished: SUCCESS
