@@ -1,0 +1,17 @@
+Started by user [8mha:////4JRX5r9Gz8DOhgZlJ7op+j9xn3PMlCOiahOiD9scqz6jAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL9gqLErPLEHACLPBEtwgAAAA==[0mprajwal more
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at com.cloudbees.plugins.credentials.matchers.IdMatcher.<init>(IdMatcher.java:58)
+	at com.cloudbees.plugins.credentials.CredentialsMatchers.withId(CredentialsMatchers.java:135)
+	at com.cloudbees.plugins.credentials.CredentialsParameterValue.lookupCredentials(CredentialsParameterValue.java:111)
+	at com.cloudbees.plugins.credentials.CredentialsParameterValue.lookupCredentials(CredentialsParameterValue.java:87)
+	at com.cloudbees.plugins.credentials.CredentialsParameterValue.buildEnvironment(CredentialsParameterValue.java:64)
+	at hudson.model.ParametersAction.buildEnvironment(ParametersAction.java:143)
+	at hudson.model.Run.getEnvironment(Run.java:2442)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.getEnvironment(WorkflowRun.java:519)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:116)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:70)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:312)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Finished: FAILURE

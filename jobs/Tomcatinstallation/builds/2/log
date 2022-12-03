@@ -1,0 +1,32 @@
+Started by GitHub push by prajwal1327
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/factorial
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/factorial/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prajwal1327/Myrepo.git # timeout=10
+Fetching upstream changes from https://github.com/prajwal1327/Myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/prajwal1327/Myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision e8b5d8ddd6874b093e011104b244104375efffa5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e8b5d8ddd6874b093e011104b244104375efffa5 # timeout=10
+Commit message: "Update tomcatinstall.sh"
+ > git rev-list --no-walk 77da56a95c751eaaef3749ec2875412380abc1b5 # timeout=10
+[factorial] $ /bin/sh -xe /tmp/jenkins75377867090445851.sh
++ sh p2.sh
+the factorial of 4 is 24
+the factorial of 3 is 6
+the factorial of 5 is 120
+the factorial of 8 is 40320
+the factorial of 9 is 362880
+the factorial of 20 is 2432902008176640000
+the factorial of 30 is 265252859812191058636308480000000
+the factorial of 40 is 815915283247897734345611269596115894272000000000
+enter the number
+p2.sh: 23: [: -gt: unexpected operator
+the sum of number is 0
+Finished: SUCCESS
